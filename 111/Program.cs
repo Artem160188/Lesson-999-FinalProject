@@ -5,11 +5,9 @@
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 Console.WriteLine("Введите число");
 int s=Convert.ToInt32(Console.ReadLine());
-string NumbersRec(int a, int b)
-
+string Numbers(int a, int b)
 {
- if ( a <= b) return NumbersRec( a + 1, b) + $"{a} ";
+ if ( a <= b) return Numbers( a + 1, b) + $"{a} ";
  else return String.Empty;
 }
-
-Console.WriteLine(NumbersRec(1, s)); // 10 9 8 7 6 5 4 3 2 1
+Console.WriteLine(Numbers(1, s)); 
